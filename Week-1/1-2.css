@@ -1,0 +1,132 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 0;
+  font-family: Lato, serif;
+  color: black;
+  font-size: 15px;
+}
+
+main {
+  flex: 1 0 auto;
+  display: flex;
+}
+
+aside {
+  flex: 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+aside i.fa {
+  font-size: 1.5em;
+}
+
+footer {
+  flex: 0 0 90px;
+  color: white;
+  background-color: royalblue;
+  display: flex;
+  padding: 10px;
+}
+
+li {
+  display: flex;
+  padding: 0 20px;
+  min-height: 50px;
+}
+
+li p {
+  flex: 0 0 25%;
+}
+
+li span {
+  border: 1px solid black;
+  font-size: 10px;
+  padding: 3px;
+}
+
+li:nth-child(2n) {
+  background-color: whitesmoke;
+}
+
+.main {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+.img {
+  flex: 0 0 280px;
+  display: flex;
+  padding: 40px;
+  background-color: grey;
+}
+
+.list {
+  flex: 1 0 auto;
+  list-style-type: none;
+  padding: 5px 10px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: white;
+  padding-left: 50px;
+}
+
+.info div {
+  margin-bottom: auto;
+}
+
+.heading {
+  font-size: 40px;
+  margin: 0 0 10px;
+}
+
+.artist .songs {
+  font-size: 15px;
+}
+
+.info div i.fa {
+  font-size: 15px;
+  padding: 0 10px;
+  font-weight: 500;
+}
+
+.small-img  {
+  display: flex;
+  margin-right: auto;
+  padding-left: 10px;
+}
+
+.small-img div {
+  padding-left: 10px;
+}
+
+.small-img img {
+  width: 100px;
+}
+
+.controls {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
