@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<br lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,7 +12,7 @@
       href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLj1zX6z_IabuZJR3allxiUimQpPN0JbWuLw&usqp=CAU"
     />
   </head>
-  <body>
+  <br>
     <nav>
       <h2>FIGHT CLUB</h2>
       <p>
@@ -85,8 +85,94 @@
           </p>
         </div>
       </div>
-      <form></form>
+      <form method="get" action="">
+        <div>
+          Title :
+          <input type="radio" id="Mr" name="fav_language" />
+          <label for="Mr">Mr</label>
+          <input type="radio" id="Mrs" name="fav_language" />
+          <label for="Mrs">Mrs</label>
+          <input type="radio" id="Miss" name="fav_language" />
+          <label for="Miss">Miss</label>
+        </div>
+        <div>
+          <label for="firstname">First Name</label><br />
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+        <div>
+          <label for="lastname">Last Name</label><br />
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            placeholder="Your Last Name"
+            required
+          />
+        </div>
+        <div>
+          <label for="email">Email Address</label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="you@gmail.com"
+            required
+          />
+        </div>
+        <div>
+          <label for="password">Password</label><br />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="A@bce123"
+            required
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          />
+        </div>
+        <div>
+          <label for="cpassword">Confirm Password:</label><br />
+          <input
+            type="password"
+            id="cpassword"
+            name="cpassword"
+            placeholder="A@bce123"
+            required
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          />
+        </div>
+        <div>
+          <label for="phone">Phone Number:</label><br />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="1234567899"
+            required
+          />
+        </div>
+        <br />
+        <label for="country">Country</label>
+        <select name="country" id="country">
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+          <option value="India">India</option>
+          <option value="Australia">Australia</option>
+        </select>
+        <br />
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">I agree to the <u>terms and conditions</u> </label><br>
+        <br /><br />
+        <input type="submit" value="Submit">
+      </form>
     </main>
+    </br></br>
     <footer>
       <a href="https://twitter.com/fightclub" target="_blank">@FightClub</a>
       &copy; FightClub.com
