@@ -1,2 +1,101 @@
+html,
+body {
+  width: auto;
+  height: auto;
+  padding-top: 100px;
+}
 
+#container {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
 
+.content {
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  top: 50%;
+  transform: translate(0 -60%);
+  font-size: 24pt;
+}
+
+.red {
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  left: 0px;
+  background: red;
+}
+
+.yellow {
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  left: 100px;
+  background: yellow;
+}
+
+.blue {
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 0px;
+  top: 100px;
+  background: blue;
+}
+
+.green {
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 100px;
+  top: 100px;
+  background: green;
+}
+
+#container:hover .red {
+  transform-origin: top left;
+  animation: rd 5s infinite;
+}
+#container:hover .yellow {
+  transform-origin: top right;
+  animation: yel 5s infinite;
+}
+#container:hover .blue {
+  transform-origin: bottom left;
+  animation: blu 5s infinite;
+}
+
+#container:hover .green {
+  transform-origin: bottom right;
+  animation: grn 5s infinite;
+}
+
+@keyframes rd {
+  50% {
+    transform: rotate(90deg);
+  }
+}
+@keyframes yel {
+  50% {
+    transform: rotate(-90deg);
+  }
+}
+@keyframes blu {
+  50% {
+    transform: rotate(-90deg);
+  }
+}
+@keyframes grn {
+  50% {
+    transform: rotate(90deg);
+  }
+}
