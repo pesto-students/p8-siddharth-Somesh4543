@@ -10,4 +10,5 @@ var Teacher = function () {
 };
 Teacher.prototype = new Person();
 var him = new Teacher();
+him.initialize("Adam", 45);
 him.teach("Inheritence");
